@@ -8,6 +8,10 @@
   height: 50px;
   background-color: black;
   animation: box-transformer 2s ease-in-out 0.5s infinite alternate both;
+  /* -webkit-animation: 2s ease-in-out 0.5s infinite alternate both; */
+  -ms-animation: 2s ease-in-out 0.5s infinite alternate both;
+  -o-animation: 2s ease-in-out 0.5s infinite alternate both;
+  -moz-animation: 2s ease-in-out 0.5s infinite alternate both;
 }
 
 .box-red {
