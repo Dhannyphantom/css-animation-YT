@@ -5,6 +5,7 @@
 }
 
 .heading:hover {
-  color: rebeccapurple;
+  color: green;
   font-size: 30px;
+  letter-spacing: 10px;
 }
