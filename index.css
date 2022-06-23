@@ -1,0 +1,10 @@
+.heading {
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.heading:hover {
+  color: rebeccapurple;
+  font-size: 30px;
+}
