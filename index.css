@@ -1,39 +1,20 @@
-body {
-  background-color: rebeccapurple;
+.box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  animation-name: grow;
+  animation-duration: 2s;
 }
 
-.nav-title {
-  text-align: center;
-  color: black;
-  transition: color 1s ease-out;
-}
-
-.nav-title:hover {
-  color: tomato;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-around;
-  height: 30px;
-}
-
-.nav-links {
-  list-style: none;
-}
-
-.nav-links > a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: all 1s ease-out;
-}
-
-.nav-links > a:hover {
-  color: tomato;
-  font-size: 1.2rem;
-}
-
-.image {
-  width: 100%;
+@keyframes grow {
+  from {
+    width: 50px;
+    height: 50px;
+    background: red;
+  }
+  to {
+    width: 50px;
+    height: 100px;
+    background: green;
+  }
 }
