@@ -7,11 +7,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid black;
-  animation: transformer 1.5s ease 0s infinite alternate;
+  animation: transformer 2s ease 0s infinite alternate;
 }
 
 @keyframes transformer {
   100% {
-    transform: translate(50%, 25%);
+    transform: rotate(180deg);
   }
 }
