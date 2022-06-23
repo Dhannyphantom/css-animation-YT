@@ -6,17 +6,44 @@
 .container {
   position: relative;
   display: flex;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .image {
-  width: 100%;
+  position: absolute;
+  width: 0vw;
+  opacity: 0;
   height: 100vh;
+  animation: bg-transform 1.5s ease 0s 1 normal forwards;
 }
 
 .title {
   position: absolute;
   text-align: center;
+  opacity: 0;
   color: white;
+  animation: title-anim 1s ease-out 0.5s 1 normal forwards;
+}
+
+@keyframes title-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bg-transform {
+  from {
+    width: 0vw;
+    opacity: 0;
+  }
+  to {
+    width: 100vw;
+    opacity: 1;
+  }
 }
