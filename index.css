@@ -3,47 +3,44 @@
   margin: 0;
 }
 
-.container {
-  position: relative;
+.image-wrapper {
   display: flex;
-  width: 100vw;
-  height: 100vh;
   justify-content: center;
   align-items: center;
-}
-
-.image {
-  position: absolute;
-  width: 0vw;
-  opacity: 0;
+  background: url("/assets/images/madara.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  animation: bg-transform 1.5s ease 0s 1 normal forwards;
+  animation: expand-filler 1.5s ease-out 0s 1 normal both;
 }
 
 .title {
-  position: absolute;
+  font-size: 4rem;
   text-align: center;
+  margin: 0px 10px;
   opacity: 0;
   color: white;
-  animation: title-anim 1s ease-out 0.5s 1 normal forwards;
+  animation: filler 1.5s ease-out 1.8s 1 normal both;
 }
 
-@keyframes title-anim {
+@keyframes expand-filler {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 100%;
+  }
+}
+
+@keyframes filler {
   from {
     opacity: 0;
   }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes bg-transform {
-  from {
-    width: 0vw;
-    opacity: 0;
-  }
   to {
-    width: 100vw;
     opacity: 1;
   }
 }
