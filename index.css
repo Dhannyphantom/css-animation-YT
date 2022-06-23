@@ -5,11 +5,17 @@ body {
 .nav-title {
   text-align: center;
   color: black;
+  transition: color 1s ease-out;
+}
+
+.nav-title:hover {
+  color: tomato;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-around;
+  height: 30px;
 }
 
 .nav-links {
@@ -20,6 +26,12 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: all 1s ease-out;
+}
+
+.nav-links > a:hover {
+  color: tomato;
+  font-size: 1.2rem;
 }
 
 .image {
