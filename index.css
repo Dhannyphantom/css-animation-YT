@@ -12,6 +12,6 @@
 
 @keyframes transformer {
   100% {
-    transform: scale(2, 4);
+    transform: translate(50%, 25%);
   }
 }
